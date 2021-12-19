@@ -34,13 +34,19 @@ contract notas {
     // Funcion para evaluar a los alumnos
     function Evaluar(string memory _idAlumno, uint _nota) public UnicamenteProfesor(msg.sender) {
         // Hash de la identificacion del alumno
-        bytes32 hash_idAlumno = keccak256(_idAlumno);
+        bytes32 hash_idAlumno = keccak256(abi.encodePacked(_idAlumno));
 
         // Relacion entre el hash de la identificacion del alumno y su nota
         Notas[hash_idAlumno] = _nota;
 
         // Emision del evento
         emit alumno_evaluado(hash_idAlumno);
+    }
+
+    modifier UnicamenteProfesor(address _direccion){
+        // Requiere de la direccion introducida por parametro sea igual al owner del contrato
+        require(_direccion == profesor, "No tienes permiso para ejecutar esta funcion.");
+        _;
     }
     
 }

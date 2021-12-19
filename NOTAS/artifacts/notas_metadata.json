@@ -37,6 +37,24 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idAlumno",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nota",
+						"type": "uint256"
+					}
+				],
+				"name": "Evaluar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "profesor",
 				"outputs": [
@@ -78,11 +96,11 @@
 	},
 	"sources": {
 		"NOTAS/notas.sol": {
-			"keccak256": "0xc7196c4fd0583d49dee96b7a448799b5f60e8e18afad2369e9a2d5969d3f585b",
+			"keccak256": "0x46566ab50a469a722937adef782e7ad7495917423c4fed4fc2a2c08b11e1c28e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://352752058b2d08f984f7d4094a05a834870d10d660e298c0fb8f2c511d29e9f2",
-				"dweb:/ipfs/QmbwJ1qpzGkbNuZZo8ZKR8cUgRxw2mwu6y4BgehxVUUmdD"
+				"bzz-raw://0a944f56e06f110673f2ed1b218954d001fc864f266827d41a99dc705eadb8bb",
+				"dweb:/ipfs/QmPbUptfSgxAr3ub4tNgau5Le4YywaUeZVFHfBXjHpm8nZ"
 			]
 		}
 	},
