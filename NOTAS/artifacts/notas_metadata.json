@@ -18,6 +18,12 @@
 						"internalType": "bytes32",
 						"name": "",
 						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"name": "alumno_evaluado",
@@ -96,11 +102,11 @@
 	},
 	"sources": {
 		"NOTAS/notas.sol": {
-			"keccak256": "0x46566ab50a469a722937adef782e7ad7495917423c4fed4fc2a2c08b11e1c28e",
+			"keccak256": "0xe5722e286d60e4225081352af5e07accee0aecf91fcbbd865221b96cf53d9ad0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0a944f56e06f110673f2ed1b218954d001fc864f266827d41a99dc705eadb8bb",
-				"dweb:/ipfs/QmPbUptfSgxAr3ub4tNgau5Le4YywaUeZVFHfBXjHpm8nZ"
+				"bzz-raw://89a9f62072fe199fba353b766f87bd55e9de619c61ab0f1b81e703c6df22f353",
+				"dweb:/ipfs/QmSJgrLdEHuiLzqTXW4ZEx7FhEmh52MsN9EmZ6VfDoAXER"
 			]
 		}
 	},

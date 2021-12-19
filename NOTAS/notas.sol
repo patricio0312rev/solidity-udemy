@@ -28,7 +28,7 @@ contract notas {
     string[] revisiones;
 
     // Eventos
-    event alumno_evaluado(bytes32);
+    event alumno_evaluado(bytes32, uint);
     event evento_revision(string);
 
     // Funcion para evaluar a los alumnos
@@ -40,7 +40,7 @@ contract notas {
         Notas[hash_idAlumno] = _nota;
 
         // Emision del evento
-        emit alumno_evaluado(hash_idAlumno);
+        emit alumno_evaluado(hash_idAlumno, _nota);
     }
 
     modifier UnicamenteProfesor(address _direccion){
