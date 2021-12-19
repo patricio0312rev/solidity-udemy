@@ -12,7 +12,6 @@ pragma experimental ABIEncoderV2;
 // Alba   | 98765Z |  5
 
 contract notas {
-
     // Direccion del profesor
     address public profesor;
 
@@ -49,4 +48,15 @@ contract notas {
         _;
     }
     
+    // Funcion para ver las notas de un alumno
+    function VerNotas(string memory _idAlumno) public returns(uint){
+        // Hash de la identificacion del alumno
+        bytes32 hash_idAlumno = keccak256(abi.encodePacked(_idAlumno));
+
+        // Nota asociada al hash del alumno
+        uint nota_alumno = Notas[hash_idAlumno];
+
+        // Visualizar la nota del alumno
+        return nota_alumno;
+    }
 }
