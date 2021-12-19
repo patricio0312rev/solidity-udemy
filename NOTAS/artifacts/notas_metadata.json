@@ -94,6 +94,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "VerRevisiones",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "profesor",
 				"outputs": [
 					{
@@ -134,11 +147,11 @@
 	},
 	"sources": {
 		"NOTAS/notas.sol": {
-			"keccak256": "0x85863e3b05d24b5b251fe37e3a1d03b78c1fa3dfc5359bf6c40c29f1f05324fb",
+			"keccak256": "0x7465f52320882d317fe73d1adff31f63053b45295cbda900800cb407b3d4a594",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4d15fdaeda9bf961fe788fe9618b6620be0327668a84da39fab22a959fce4bce",
-				"dweb:/ipfs/QmbGH3SCxnBNyPTZSWj9dkzGm9S4WzPZMWdi89zES7aub6"
+				"bzz-raw://30c976ed1a2373f5b0c67df5f097f232b31dbbb9c7cd3fd1eb964f7130453500",
+				"dweb:/ipfs/QmYzLxsTCmUJxjfVmag2CwXVPrejbTi2ZSs72x4kdk7T3m"
 			]
 		}
 	},

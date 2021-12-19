@@ -8,7 +8,7 @@ pragma experimental ABIEncoderV2;
 // Marcos | 77755N |  5
 // Joan   | 12345X |  9
 // Marcia | 02468T |  2
-// Marta  | 13579U  |  3
+// Marta  | 13579U |  3
 // Alba   | 98765Z |  5
 
 contract notas {
@@ -67,5 +67,11 @@ contract notas {
 
         // Emision del evento
         emit evento_revision(_idAlumno);
+    }
+
+    // Funcion para ver los alumnos que han solicitado revision de examen
+    function VerRevisiones() public view UnicamenteProfesor(msg.sender) returns(string[] memory) {
+        // Devolver las identidades de los alumnos que han solicitado revisiones
+        return revisiones;
     }
 }
