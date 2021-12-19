@@ -68,6 +68,19 @@
 						"type": "string"
 					}
 				],
+				"name": "Revision",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idAlumno",
+						"type": "string"
+					}
+				],
 				"name": "VerNotas",
 				"outputs": [
 					{
@@ -121,11 +134,11 @@
 	},
 	"sources": {
 		"NOTAS/notas.sol": {
-			"keccak256": "0x6a9463bb3245c31bc2cd654e0ad1b3f9f450daded0d2f4acdaeb55a32771c61f",
+			"keccak256": "0x85863e3b05d24b5b251fe37e3a1d03b78c1fa3dfc5359bf6c40c29f1f05324fb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4ca4073c947a71d86e87eefda6d992d42ca27a2fba0bd4c4640f623d23a7ec74",
-				"dweb:/ipfs/Qme4CaWVgTckBpQQuKdcBCrF4hRBcNm5ut4rGV3n1iJBEG"
+				"bzz-raw://4d15fdaeda9bf961fe788fe9618b6620be0327668a84da39fab22a959fce4bce",
+				"dweb:/ipfs/QmbGH3SCxnBNyPTZSWj9dkzGm9S4WzPZMWdi89zES7aub6"
 			]
 		}
 	},
